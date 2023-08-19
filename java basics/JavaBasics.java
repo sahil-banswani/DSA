@@ -3,7 +3,7 @@
 public class JavaBasics {
     public static void main(String args[]) {
         // System.out.print();
-        swap();
+        System.out.println(binomialCoefficient(5,3));
     }
 
     static void pattern1(int n) {
@@ -21,16 +21,32 @@ public class JavaBasics {
         return product;
     }
 
-    static void swap() {
-        int a = 5;
-        int b = 10;
+    static void swap(int a, int b) {
+
         int temp;
         temp = a;
         a = b;
         b = temp;
-
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
-
     }
+
+    public static int factorial(int n) {
+        int fac = n;
+        for (int i = n-1; i > 1; i--) {
+            fac = fac * i;
+        }
+        return fac;
+    }
+
+    public static int binomialCoefficient(int n, int r) {
+        // nCr = n!/(r!(n-r)!)
+        int n_fac = factorial(n);
+        int r_fac = factorial(r);
+
+        int nmr_fact = n_fac / (r_fac * factorial(n-r));
+
+        return nmr_fact;
+    }
+
+    
+
 }
