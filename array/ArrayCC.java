@@ -1,7 +1,7 @@
 
 class ArrayCC {
     public static void main(String arg[]) {
-        int marks[] = {11,15,17,18,19,25,35,65,47,20,58};
+        // int marks[] = {11,15,17,18,19,25,35,65,47,20,58};
         String key = "Appe";
         String menu[] = {"dosa", "chole Bhature", "Samosa", "Appe", " Fried Rice"};
 
