@@ -1,4 +1,4 @@
-
+// find an element in an array
 class ArrayCC {
     public static void main(String arg[]) {
         // int marks[] = {11,15,17,18,19,25,35,65,47,20,58};

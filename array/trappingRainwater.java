@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class trappingRainwater {
     public static void main(String arg[]) {
         int height[] = {4,2,0,6,3,2,5};
