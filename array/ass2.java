@@ -2,6 +2,8 @@ public class ass2 {
     public static void main(String[] arg) {
         int numbers[] = {-1,0,1,8,9,4}; 
         triplet(numbers);
+
+    
     }
 
     public static void triplet(int numbers[]) {
