@@ -2,8 +2,8 @@
 
 public class ArrayChallenge1 {
     public static void main(String[] arg) {
-        int arr[] = {10,7,4,6,8,10,11};
-        System.out.println(longestArithmaticSubarray(arr));
+        int arr[] = {1,2,0,7,2,0,2,2,};
+        System.out.println(recordBreakingDay(arr));
     }
 
     // Max till ith element
@@ -43,6 +43,18 @@ public class ArrayChallenge1 {
             }
             ans = Math.max(ans,curr);
             j++;
+        }
+        return ans;
+    }
+    public static int recordBreakingDay(int arr[] ) {
+        int n = arr.length;
+        int ans=0;
+        int mx= -1;
+        for(int i=0;i<n;i++) {
+            if(arr[i] > mx && arr[i] > arr[i+1]) {
+                ans++;
+            }
+            mx = Math.max(ans, arr[i]);
         }
         return ans;
     }
