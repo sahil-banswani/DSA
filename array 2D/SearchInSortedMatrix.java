@@ -17,9 +17,11 @@ public class SearchInSortedMatrix {
                 return true;
             } else if (key < matrix[row][col]) {
                 col--;
+
                 return true;
             } else {
                 row++;
+                
                 return true;
             }
         }
