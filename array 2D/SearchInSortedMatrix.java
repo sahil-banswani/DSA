@@ -10,7 +10,7 @@ public class SearchInSortedMatrix {
     }
 
     public static boolean stairecaseSearch(int matrix[][], int key) {
-        int row = 0, col = matrix[0].length - 1;
+        int row=0,col = matrix[0].length - 1;
         while (row < matrix.length && col > 0) {
             if (matrix[row][col] == key) {
                 System.out.println("Foumd Key at (" + row + "," + col + ")");
