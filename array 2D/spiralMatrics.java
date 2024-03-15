@@ -1,5 +1,5 @@
 
-class SpiralMatrix {
+class spiralMatrics {
     public static void main(String[] arg) {
         int matrice[][] = { { 1, 2, 3, 4 },
                 { 5, 6, 7, 8 },
@@ -40,3 +40,4 @@ class SpiralMatrix {
         System.out.println();
     }
 }
+

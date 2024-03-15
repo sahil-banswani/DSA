@@ -2,7 +2,7 @@
 
 public class ArrayChallenge1 {
     public static void main(String[] arg) {
-        int arr[] = {1,2,0,7,2,0,2,2,};
+        int arr[] = {1,2,0,7,2,0,2,2};
         System.out.println(recordBreakingDay(arr));
     }
 
