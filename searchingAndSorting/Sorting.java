@@ -34,6 +34,17 @@ public class Sorting {
         }
     }
 
+    public static void insertionSort(int arr[]) {
+        for(int i=0; i<arr.length-1;i++) {
+            int curr = i;
+            int prev = i-1;
+            while(prev>=0 && arr[prev] > arr[curr]) {
+                arr[prev+1] = arr[prev];
+                prev--;
+            }
+        }
+    }
+
     public static void printArr(int[] arr) {
         for(int i = 0; i<arr.length; i++) {
             System.out.print(arr[i] + " ");
