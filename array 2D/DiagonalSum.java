@@ -9,7 +9,11 @@ public class DiagonalSum {
     }
 
     public static void printDiagonalSum(int matrix[][]) {
+        // logic = i+j = n - 1
+        
         int sum = 0;
+
+
         // O(n^2)
         // for(int i=0; i<matrix.length; i++) {
         // for(int j=0; j<matrix[0].length; j++) {
