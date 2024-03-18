@@ -1,4 +1,4 @@
-
+ 
 class spiralMatrics {
     public static void main(String[] arg) {
         int matrice[][] = { { 1, 2, 3, 4 },
