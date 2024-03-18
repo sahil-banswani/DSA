@@ -33,6 +33,6 @@ public class DiagonalSum {
             if(i != matrix.length - 1 - i)
                 sum += matrix[i][matrix.length - i - 1];
         }
-        System.out.println(sum);
+        System.out.println(sum); 
     }
 }
