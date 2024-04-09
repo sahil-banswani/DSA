@@ -11,28 +11,26 @@ class binarySearch {
         System.out.println(ans2);
     }
 
-    public static ceilingOfANumber(int arr[], int target) {
+    public static int ceilingOfANumber(int arr[], int target) {
         int start = 0;
         int end = arr.length - 1;
-
         while (start <= end ) {
             // find the middle element
             // int mid = (start + end) /2; // might be posiible that (start + end) exceed in negative. 
             int mid = start + (end -start) /2;
-
-            if (tartget < arr[mid]) {
+            if (target < arr[mid]) {
                 end = mid-1;
             } else if (target > arr[mid]){
                 start = mid + 1;
-            } elae {
+            } else {
                 // element found
                 return mid;
             }
         }
-        return start;
+        return arr[start];
     }
-    
-    public static floorOfANumber(int arr[], int target) {
+
+    public static int floorOfANumber(int arr[], int target) {
         int start = 0;
         int end = arr.length - 1;
 
@@ -41,11 +39,11 @@ class binarySearch {
             // int mid = (start + end) /2; // might be posiible that (start + end) exceed in negative. 
             int mid = start + (end -start) /2;
 
-            if (tartget < arr[mid]) {
+            if (target < arr[mid]) {
                 end = mid-1;
             } else if (target > arr[mid]){
                 start = mid + 1;
-            } elae {
+            } else {
                 // element found
                 return mid;
             }
