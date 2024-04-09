@@ -4,6 +4,7 @@ class FirstAndLastPosition{
     public static void main(String[] arg) {
         int[] arr = {5,7,7,7,7,8,8,10};
         int target = 7;
+        
         int[] ans = searchRange(arr, target);
         System.out.println(ans);
     }
