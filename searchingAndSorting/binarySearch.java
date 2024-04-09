@@ -5,8 +5,10 @@ class binarySearch {
     public static void main(String[] arg) {
         int arr[] = {2,3,5,9,14,16,18};
         int target = 15;
-        int ans = ceilingOfANumber(arr, target);
-        System.out.println(ans);
+        int ans1 = ceilingOfANumber(arr, target);
+        int ans2 = ceilingOfANumber(arr, target);
+        System.out.println(ans1);
+        System.out.println(ans2);
     }
 
     public static ceilingOfANumber(int arr[], int target) {
@@ -29,6 +31,7 @@ class binarySearch {
         }
         return start;
     }
+    
     public static floorOfANumber(int arr[], int target) {
         int start = 0;
         int end = arr.length - 1;
