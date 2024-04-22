@@ -2,11 +2,19 @@
 
 class searchInMountian {
     public static void main(String[] arg) {
+        int arr[] = {1,2,3,4,5,3,1};
+        int target = 3;
 
     }
 
-    int search (int arr[]) {
-
+    int search (int arr[], int target) {
+        int peak = findindexofPeakElement(arr);
+        int firstTry = binarySearch(arr, target, 0, peak);
+        if(firstTry != -1) {
+            return firstTry;
+        }
+        // try to search in second half
+        return binarySearch(arr, target, peak+1, arr.length -1);
     }
 
     static int findindexofPeakElement(int arr[]) {
@@ -29,9 +37,7 @@ class searchInMountian {
         return start;
     }
 
-    public static int binarySearch(int arr[], int target) {
-        int start = 0;
-        int end = arr.length - 1;
+    public static int binarySearch(int arr[], int target ,int start, int end) {
         while (start <= end ) {
             // find the middle element
             // int mid = (start + end) /2; // might be posiible that (start + end) exceed in negative. 
