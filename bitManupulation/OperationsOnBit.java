@@ -1,6 +1,6 @@
 class OperationsOnBit {
     public static void main(String[] arg) {
-        System.out.println(setIthBit(10,2));
+        System.out.println(clearIthBit(10,1));
     }
 
     static int getIthBit (int n, int i) {
@@ -15,5 +15,10 @@ class OperationsOnBit {
     static int setIthBit (int n, int i) {
         int bitMask = n << i;
         return n | bitMask;
+    }
+
+    static int clearIthBit (int n, int i) {
+        int bitMask = ~(1 << i);
+        return n & bitMask;
     }
 }
