@@ -21,4 +21,14 @@ class OperationsOnBit {
         int bitMask = ~(1 << i);
         return n & bitMask;
     }
+
+    static int updateIthBit (int n, int i, int newBit) {
+        // if(newBit == 0) {
+        //     return clearIthBit(n,i);
+        // } else {
+        //     return setIthBit(n, i);
+        // }
+
+        
+    }
 }
