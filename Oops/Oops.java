@@ -26,4 +26,7 @@ class Pen {
 class BankAccount {
     public String userName;
     private String password;
+    public void setPassword(String pwd) {
+        password = pwd;
+    }
 }
