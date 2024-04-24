@@ -4,6 +4,10 @@ public class Oops {
         p1.setColor("blue");
         System.out.println(p1.color);
     }
+
+    BankAccount myaccount = new BankAccount();
+    myaccount.userName = "Sahil";
+    // myaccount.password = "nkwribfd";
 }
 
 class Pen {
@@ -20,5 +24,6 @@ class Pen {
 }
 
 class BankAccount {
-    
+    public String userName;
+    private String password;
 }
