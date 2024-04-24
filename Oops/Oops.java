@@ -15,6 +15,10 @@ class Pen {
     String color;
     int tip;
 
+    void getColor() {
+        return this.color;
+    }
+
     void setColor(String newColor) {
         color = newColor;
     }
