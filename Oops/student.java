@@ -1,6 +1,6 @@
 class student {
     public static void main(String arg[]) {
-        Students s1 = new Students();
+        Students s1 = new Students("Sahil");
     }
 }
 
@@ -24,7 +24,7 @@ class Students {
     Students(Students s1) {
         marks = new int[3];
         this.name = s1.name;
-        this.return = s1.return;
+        this.roll = s1.roll;
         for(int i=0; i<3;i++) {
             this.marks[i] = s1.marks[i];
         }
@@ -32,11 +32,12 @@ class Students {
 
     Students() {
         marks = new int[3];
-        System.out.println("Contructor is called..")
+        System.out.println("Contructor is called..");
     }
 
     Students (String name) {
         marks = new int[3];
         this.name = name;
+        System.out.println("Sahil");
     }
 }
