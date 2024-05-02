@@ -11,14 +11,24 @@ class Students {
     String password;
     int marks[];
 
-    // copy constructor
+    // shallo - copy constructor
+    // Students(Students s1) {
+    //     marks = new int[3];
+    //     this.name = s1.name;
+    //     this.return = s1.return;
+    //     this.marks = s1.marks;
+    //     // System.out.println();
+    // };
+
+    //deep copy contructor
     Students(Students s1) {
         marks = new int[3];
         this.name = s1.name;
         this.return = s1.return;
-        this.marks = s1.marks;
-        // System.out.println();
-    };
+        for(int i=0; i<3;i++) {
+            this.marks[i] = s1.marks[i];
+        }
+    }
 
     Students() {
         marks = new int[3];
