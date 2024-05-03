@@ -1,3 +1,4 @@
+
 class Abstraction {
     public static void main(String arg[] ) {
         Horse h = new Horse();
