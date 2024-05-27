@@ -23,7 +23,6 @@ public class RecurssionBasics {
         if(n==0) {
             return 1;
         }
-        int fac1 = Factorial(n-1);
         int fn = n * Factorial(n-1);
         return fn;
     }
