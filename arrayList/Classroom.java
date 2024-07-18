@@ -11,19 +11,19 @@ public class Classroom {
     }
     public static void main(String[] arg) {
         ArrayList<Integer> list = new ArrayList<>();
-        list.add(10);
-        list.add(95);
-        list.add(12);
-        list.add(85);
-        list.add(56);
+        // list.add(10);
+        // list.add(95);
+        // list.add(12);
+        // list.add(85);
+        // list.add(56);
 
         // swap(list, 1, 3);
 
-        Collections.sort(list);
-        Collections.
-        System.out.println(list);
+        // Collections.sort(list, Collections.reverseOrder());
+        // Collections.
+        // System.out.println(list);
 
-        // reverse Arraylist
+          // reverse Arraylist
         // for(int i = list.size()-1; i>=0; i--) {
         //     System.out.print(list.get(i) + " ");
         // } 
@@ -49,6 +49,22 @@ public class Classroom {
         // swap elements
         
 
+        ArrayList<ArrayList<Integer>> mainList = new ArrayList<>();
 
+        ArrayList<Integer> list2 = new ArrayList<>();
+        
+        ArrayList<Integer> list3 = new ArrayList<>();
+        
+        for(int i=1; i<=5; i++) {
+            list.add(i*1);
+            list2.add(i*2);
+            list3.add(i*3);
+        }
+        mainList.add(list);
+        mainList.add(list2);
+        mainList.add(list3);
+
+
+        System.out.println(mainList);
     }
 }
