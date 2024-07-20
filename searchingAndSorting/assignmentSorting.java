@@ -3,14 +3,14 @@ import java.util.*;
 public class assignmentSorting {
     public static void main(String[] arg) {
         int arr[] = {3,6,2,1,8,7,4,5,3,1};
-        selectionSort(arr);
+        bubbleSorting(arr);
         printArr(arr);
     }
 
     public static void bubbleSorting(int arr[]) {
         for(int turn = 0; turn < arr.length-1; turn++) {
             for(int j=0; j<arr.length-1-turn; j++) {
-                if(arr[j] < arr[j+1] ) {
+                if(arr[j] > arr[j+1] ) {
                     //swap
                     int temp = arr[j];
                     arr[j] = arr[j+1];
