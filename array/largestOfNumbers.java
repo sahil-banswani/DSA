@@ -9,9 +9,7 @@ public class largestOfNumbers {
     public static int getlargest(int numbers[]) {
         int largest = Integer.MIN_VALUE;
         for(int i = 0; i<numbers.length; i++ ) {
-            if(numbers[i] > largest) {
-                largest = numbers[i];
-            }
+            largest = Math.max(numbers[i], largest);
         }
         return largest;
     }
@@ -19,9 +17,7 @@ public class largestOfNumbers {
     public static int getSmallest(int numbers[]) {
         int smallest = Integer.MAX_VALUE;
         for(int i = 0; i<numbers.length; i++ ) {
-            if(smallest > numbers[i]) {
-                smallest = numbers[i];
-            }
+            smallest = Math.min(smallest, numbers[i]);
         }
         return smallest;
     }

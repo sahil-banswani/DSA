@@ -1,9 +1,7 @@
 public class ass2 {
     public static void main(String[] arg) {
-        int numbers[] = {-1,0,1,8,9,4}; 
+        int numbers[] = { -1, 0, 1, 8, 9, 4 };
         triplet(numbers);
-
-    
     }
 
     public static void triplet(int numbers[]) {
@@ -11,7 +9,7 @@ public class ass2 {
             for (int j = 0; j < numbers.length; j++) {
                 for (int k = 0; k < numbers.length; k++) {
                     if (i != j && i != k && j != k && (numbers[i] + numbers[j] + numbers[k] == 0)) {
-                        System.out.println('['+ numbers[i] + ","+ numbers[j] +","+ numbers[k]+']');
+                        System.out.println('[' + numbers[i] + "," + numbers[j] + "," + numbers[k] + ']');
                     }
                 }
             }
