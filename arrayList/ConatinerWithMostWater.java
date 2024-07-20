@@ -17,8 +17,24 @@ public class ConatinerWithMostWater {
         return maxWater;
     } // O(n^2)
 
+    // 2 pointer approch
     public static int storeWater(ArrayList<Integer> height) {
-        
+        int lp = 0, rp = height.size()-1;
+        int maxWater = 0;
+        while(lp < rp) {
+            // calculate water area
+            int ht = Math.min(height.get(lp), height.get(rp));
+            int width = rp - lp;
+            int currWater = ht*width;
+            maxWater = Math.max(maxWater, currWater);
+            // update ptr
+            if(height.get(lp) < height.get(rp)) {
+                lp++;
+            } else {
+                rp--;
+            }
+        }
+        return maxWater;
     }
 
     public static void main(String[] args) {
@@ -34,6 +50,6 @@ public class ConatinerWithMostWater {
         list.add(3);
         list.add(7);
         storedWater(list);
-        System.out.println(storedWater(list));
+        System.out.println(storeWater(list));
     }
 }
