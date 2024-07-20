@@ -20,7 +20,7 @@ public class PairSumOne {
         }
         return false;
     }
-
+    // Brute Force code.
     public static boolean pairSum1(ArrayList<Integer> list, int target) {
 
         for(int i= 0; i < list.size(); i++ ) {
