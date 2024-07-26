@@ -13,12 +13,13 @@ public class problem2 {
     }
 
     // Optimize Aaproch
-    public static int optimizedPower(int x, int n) {
+    public static int optimizedPower(int x, int n) { // O(logn)
 
         if (n == 0) {
             return 1;
         }
-        int halfPowerSq = optimizedPower(x, n / 2);
+        int halfpower = optimizedPower(x, n / 2);
+        int halfPowerSq = halfpower * halfpower;
 
         if (n % 2 != 0) {
             halfPowerSq = x * halfPowerSq;
